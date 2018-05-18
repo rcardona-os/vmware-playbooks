@@ -1,0 +1,9 @@
+# Create simple instance
+
+- name: Create a simple VM instance
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Deploy new VM instance
+      ec2:
+        key_name: mykeyaws
